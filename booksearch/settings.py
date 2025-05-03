@@ -76,10 +76,29 @@ WSGI_APPLICATION = 'booksearch.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', #'django.db.backends.sqlite3',
+        'NAME': 'book_search', #BASE_DIR / 'db.sqlite3',
+        'USER': 'postgres', #'sa',
+        'PASSWORD':'Kosova@24',
+        'HOST': 'localhost',
+        'PORT':'',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mssql', #'django.db.backends.sqlite3',
+#         'NAME': 'book_search', #BASE_DIR / 'db.sqlite3',
+#         'USER': 'sa', #'sa',
+#         'PASSWORD':'',
+#         'HOST': 'localhost',
+#         #'PORT':'',
+#         'OPTIONS':{
+#             'driver':'ODBC Driver 17 for SQL Server',
+#             'Trusted_Connection':'yes'
+#         }
+#     }
+# }
 
 
 # Password validation
