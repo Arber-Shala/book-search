@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # request -> response
 
 def main_menu(request):
-    return HttpResponse("Main Menu")
+    return render(request, 'main_menu.html', {"name": "Arber"})
 
 def say_hello(request):
     return render(request, 'hello.html', {"name": "Arber"})
