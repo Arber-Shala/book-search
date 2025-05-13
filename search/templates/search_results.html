@@ -1,0 +1,20 @@
+ <!-- {% if name %}
+<h1> Hello {{ name }}</h1>
+{% else %}
+<h1> Hello World</h1>
+{% endif %} -->
+
+
+<h1>Search Results</h1>
+
+<u1>
+    {% if model %}
+        {% for book in model %}
+            <li>
+                {{book.name}}
+            </li>
+            {% endfor %}
+    {% else %}
+        <h1> No Books Found </h1>
+    {% endif %}
+</u1> 

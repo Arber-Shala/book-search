@@ -6,7 +6,7 @@ from django.urls import URLPattern, URLResolver
 
 urlpatterns:list[URLResolver|URLPattern] = [
     path('', views.main_menu),
-    path('search/', views.say_hello),
+    path('search/', views.search_results, name = "search_results"),
 ]
 
 
